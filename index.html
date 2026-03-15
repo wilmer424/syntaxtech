@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syntax Tech | Soluciones Digitales</title>
     <style>
-    <style>
     body { 
         background-color: #0d1117; 
         color: #c9d1d9; 
@@ -14,39 +13,43 @@
         flex-direction: column; 
         align-items: center; 
         justify-content: center; 
-        min-height: 100vh; /* Se adapta al alto real */
+        min-height: 100vh; 
         margin: 0; 
-        padding: 20px; /* Margen para que no toque los bordes en el celular */
+        padding: 20px; 
         text-align: center;
     }
     h1 { 
-        color: #58a6ff; 
-        font-size: clamp(2rem, 8vw, 3rem); /* La letra se achica si la pantalla es chica */
+        color: #00d4ff; /* ¡Este es el azul brillante y potente! */
+        font-size: clamp(2.5rem, 10vw, 4rem); 
         margin-bottom: 10px; 
+        text-shadow: 0 0 10px #00d4ff; /* Esto le da ese efecto de neón */
     }
     p { 
-        font-size: clamp(0.9rem, 4vw, 1.2rem); /* La letra se achica si la pantalla es chica */
-        border-right: 2px solid #58a6ff; 
+        font-size: clamp(1rem, 5vw, 1.5rem); 
+        color: #e6edf3;
+        border-right: 2px solid #00d4ff; 
         white-space: nowrap; 
         overflow: hidden; 
         animation: typing 3s steps(30), blink 0.5s infinite; 
-        max-width: 90%; /* Evita que el párrafo sea más ancho que el celular */
+        max-width: 90%;
     }
     .contact-btn { 
-        margin-top: 20px; 
-        padding: 12px 24px; 
-        border: 1px solid #58a6ff; 
-        color: #58a6ff; 
+        margin-top: 30px; 
+        padding: 12px 25px; 
+        border: 2px solid #00d4ff; 
+        color: #00d4ff; 
         text-decoration: none; 
-        border-radius: 5px; 
+        border-radius: 8px; 
+        font-weight: bold;
         transition: 0.3s; 
-        font-size: 1rem;
     }
-    .contact-btn:hover { background-color: #58a6ff; color: #0d1117; }
-    
+    .contact-btn:hover { 
+        background-color: #00d4ff; 
+        color: #0d1117; 
+        box-shadow: 0 0 20px #00d4ff;
+    }
     @keyframes typing { from { width: 0 } to { width: 100% } }
-    @keyframes blink { from { border-color: transparent } to { border-color: #58a6ff } }
-</style>
+    @keyframes blink { from { border-color: transparent } to { border-color: #00d4ff } }
 </style>
 </head>
 <body>
