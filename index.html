@@ -1,92 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Syntax Tech</title>
-
-<style>
-
-body{ 
-    background-color:#0d1117; 
-    color:#c9d1d9; 
-    font-family:'Courier New', Courier, monospace; 
-    display:flex; 
-    flex-direction:column; 
-    align-items:center; 
-    justify-content:center; 
-    height:100vh; 
-    margin:0; 
-    text-align:center;
-    padding:20px;
-}
-
-h1{ 
-    color:#58a6ff; 
-    font-size:2.5rem; 
-    margin-bottom:15px;
-}
-
-/* TEXTO RESPONSIVO */
-p{ 
-    font-size:1.2rem; 
-    max-width:600px;
-    line-height:1.5;
-}
-
-/* BOTÓN */
-.contact-btn{ 
-    margin-top:25px; 
-    padding:12px 25px; 
-    border:1px solid #58a6ff; 
-    color:#58a6ff; 
-    text-decoration:none; 
-    border-radius:6px; 
-    transition:0.3s;
-    font-size:1rem;
-}
-
-.contact-btn:hover{ 
-    background-color:#58a6ff; 
-    color:#0d1117; 
-}
-
-/* AJUSTES PARA CELULARES */
-@media (max-width:600px){
-
-    h1{
-        font-size:2rem;
-    }
-
-    p{
-        font-size:1rem;
-    }
-
-    .contact-btn{
-        width:80%;
-        max-width:250px;
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Tech</title>
+    <style>
+        body { 
+            background-color: #0d1117; 
+            color: #c9d1d9; 
+            font-family: 'Courier New', Courier, monospace; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px;
+            text-align: center;
+        }
+        h1 { color: #58a6ff; font-size: 3rem; margin-bottom: 10px; }
+        
+        /* Animación para el párrafo principal */
+        .typing-text { 
+            font-size: 1.2rem; 
+            border-right: 2px solid #58a6ff; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            animation: typing 3s steps(30), blink 0.5s infinite; 
+            max-width: 90vw;
+        }
+        
+        /* Estilo para la nueva sección de servicios */
+        .services { margin: 30px 0; color: #8b949e; line-height: 1.6; }
+        .services h3 { color: #58a6ff; }
+        
+        .contact-btn { 
+            margin-top: 20px; 
+            padding: 10px 20px; 
+            border: 1px solid #58a6ff; 
+            color: #58a6ff; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            transition: 0.3s; 
+        }
+        .contact-btn:hover { background-color: #58a6ff; color: #0d1117; }
+        
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink { from { border-color: transparent } to { border-color: #58a6ff } }
+    </style>
 </head>
-
 <body>
 
     <h1>SYNTAX TECH</h1>
-    <p>Soluciones tecnológicas a tu medida.</p>
+    <p class="typing-text">Soluciones tecnológicas a tu medida.</p>
     
-    <div style="margin: 30px 0; color: #8b949e; font-family: sans-serif;">
-        <h3 style="color: #58a6ff;">Nuestros Servicios</h3>
+    <div class="services">
+        <h3>Nuestros Servicios</h3>
         <p>💻 Desarrollo Web | 🛠️ Soporte Técnico | ⚡ Optimización de Sistemas</p>
     </div>
 
-    <a href="https://wa.me/3172563103" class="contact-btn">Contáctanos</a>
-
-</body>
-
-
+    <a href="https://wa.me/tu-numero-aqui" class="contact-btn">Contáctanos</a>
 
 </body>
 </html>
